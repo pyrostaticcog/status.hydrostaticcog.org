@@ -12,15 +12,19 @@ request.onload = function () {
         }
         document.getElementById("status-mc").innerHTML = 'Online';
         document.getElementById('status-mc').style.backgroundColor = "green";
+        document.getElementById("status-mc").style.color = 'white';
         document.getElementById("status-gh").innerHTML = 'Online';
         document.getElementById('status-gh').style.backgroundColor = "green";
+        document.getElementById("status-gh").style.color = 'white';
 
     }
     else {
         document.getElementById("status-mc").innerHTML = 'Offline'
         document.getElementById('status-mc').style.backgroundColor = "red";
+        document.getElementById("status-mc").style.color = 'white';
         document.getElementById("status-gh").innerHTML = 'Offline'
         document.getElementById('status-gh').style.backgroundColor = "red";
+        document.getElementById("status-gh").style.color = 'white';
     }
 }
 

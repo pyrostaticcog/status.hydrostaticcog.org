@@ -13,17 +13,21 @@
             ping('https://hydrostaticcog.org').then(function(delta) {
                 document.getElementById('status-web').innerHTML = 'Online';
                 document.getElementById('status-web').style.backgroundColor = "green";
+                document.getElementById("status-web").style.color = 'white';
             }).catch(function(error) {
                 document.getElementById('status-web').innerHTML = 'Offline';
                 document.getElementById('status-web').style.backgroundColor = "red";
+                document.getElementById("status-web").style.color = 'white';
             });
             document.getElementById('status-mail').innerHTML = 'Pinging...';
             ping('https://mail.hydrostaticcog.org').then(function(delta) {
                 document.getElementById('status-mail').innerHTML = 'Online';
                 document.getElementById('status-mail').style.backgroundColor = "green";
+                document.getElementById("status-mail").style.color = 'white';
             }).catch(function(error) {
                 document.getElementById('status-mail').innerHTML = 'Offline';
                 document.getElementById('status-mail').style.backgroundColor = "red";
+                document.getElementById("status-mail").style.color = 'white';
             });   
         };</script>
     <title>Server Status</title>
