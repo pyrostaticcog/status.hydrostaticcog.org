@@ -121,42 +121,12 @@ body {
   display: block;
 }
 
-.mail-box {
+.box {
   border: 1px solid black;
   width: 100px;
-  margin-left: 47.5%;
+  margin: auto;
 }
-.mail-box span {
-  float: center;
-  text-align: center;
-}
-
-.mc-box {
-  border: 1px solid black;
-  width: 100px;
-  margin-left: 47.5%;
-}
-.mc-box span {
-  float: center;
-  text-align: center;
-}
-
-.web-box {
-  border: 1px solid black;
-  width: 100px;
-  margin-left: 47.5%;
-}
-.web-box span {
-  float: center;
-  text-align: center;
-}
-
-.gh-box {
-  border: 1px solid black;
-  width: 100px;
-  margin-left: 47.5%;
-}
-.gh-box span {
+.box span {
   float: center;
   text-align: center;
 }
