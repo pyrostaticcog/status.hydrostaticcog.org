@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="60">
     <link rel="stylesheet" href="/css/homepage.css">
-    <script type='text/javascript'>
-    document.getElementById("status-mc").innerHTML = 'Pinging..'
-    document.getElementById("status-gh").innerHTML = 'Pinging..'
-    </script>
     <script type='text/javascript' src='scripts/ping-script/ping.js'></script>
     <script type='text/javascript' src='scripts/mcping.js'></script>
     <script type='text/javascript'>
         var do_ping = function() {
-            document.getElementById('status-web').innerHTML = 'Pinging...';
             ping('https://hydrostaticcog.org').then(function(delta) {
                 document.getElementById('status-web').innerHTML = 'Online';
                 document.getElementById('status-web').style.backgroundColor = "green";
@@ -24,7 +19,6 @@
                 document.getElementById('status-web').style.backgroundColor = "red";
                 document.getElementById("status-web").style.color = 'white';
             });
-            document.getElementById('status-mail').innerHTML = 'Pinging...';
             ping('https://mail.hydrostaticcog.org').then(function(delta) {
                 document.getElementById('status-mail').innerHTML = 'Online';
                 document.getElementById('status-mail').style.backgroundColor = "green";
@@ -52,13 +46,13 @@
         </nav>
         <h1>Server Status</h1>
         <h2>Web Servers</h2>
-        <span id='status-web' class='box'></span>
+        <span id='status-web' class='box'>Pinging...</span>
         <h2>Mail Servers</h2>
-        <span id='status-mail' class='box'></span>
+        <span id='status-mail' class='box'>Pinging...</span>
         <h2>Minecraft Servers</h2>
-        <span id='status-mc' class='box'></span>
+        <span id='status-mc' class='box'>Pinging...</span>
         <h2>Discord Bots</h2>
-        <span id='status-gh' class ='box'></span>
+        <span id='status-gh' class ='box'>Pinging...</span>
         <br>
         <nav class="footnav">
             <a href='https://hydrostaticcog.org/index.html'; class="navbar-item">Home</a>
